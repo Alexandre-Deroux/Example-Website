@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boutique avec Snipcart</title>
+    <title>Shop with Snipcart</title>
     <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.6.1/default/snipcart.css" />
     <style>
         body {
@@ -32,23 +32,23 @@
     </style>
 </head>
 <body>
-    <h1>Ma boutique</h1>
+    <h1>My shop</h1>
     <div class="product">
-        <img src="https://via.placeholder.com/300x200" alt="Produit 1">
-        <h2>Produit 1</h2>
-        <p>Un super produit !</p>
-        <p>Prix : 19.99 €</p>
+        <img src="Images/Photo de Vase (6).jpg" alt="Photo de Vase (6)">
+        <h2>Product 1</h2>
+        <p>A great product!</p>
+        <p>Price: €19.99</p>
         <button 
             class="snipcart-add-item"
-            data-item-id="produit-1"
-            data-item-name="Produit 1"
+            data-item-id="product-1"
+            data-item-name="Product 1"
             data-item-price="19.99"
             data-item-url="/"
-            data-item-description="Un super produit !">
-            Ajouter au panier
+            data-item-description="A great product!">
+            Add to basket
         </button>
     </div>
-    <button class="snipcart-checkout" onclick="Snipcart.api.theme.cart.open()">Voir le panier</button>
+    <button class="snipcart-checkout" onclick="Snipcart.api.theme.cart.open()">View basket</button>
     <div hidden id="snipcart" data-api-key="Zjg4YTEwZDItZjQ1NS00Mzc5LWJlNzgtYmVlNTdhZjAxZGY2NjM4Nzg3OTE2NDEwNDUxNDMz" data-config-modal-style="side"></div>
     <script async src="https://cdn.snipcart.com/themes/v3.6.1/default/snipcart.js"></script>
 </body>

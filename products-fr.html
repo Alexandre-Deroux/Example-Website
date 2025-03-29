@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique avec Snipcart</title>
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.6.1/default/snipcart.css" />
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 2rem;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            max-width: 300px;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+        .snipcart-checkout {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #000;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ma boutique</h1>
+    <div class="product">
+        <img src="Images/Photo de Vase (6).jpg" alt="Photo de Vase (6)">
+        <h2>Produit 1</h2>
+        <p>Un super produit !</p>
+        <p>Prix : 19.99 €</p>
+        <button 
+            class="snipcart-add-item"
+            data-item-id="product-1"
+            data-item-name="Produit 1"
+            data-item-price="19.99"
+            data-item-url="/"
+            data-item-description="Un super produit !">
+            Ajouter au panier
+        </button>
+    </div>
+    <button class="snipcart-checkout" onclick="Snipcart.api.theme.cart.open()">Voir le panier</button>
+    <div hidden id="snipcart" data-api-key="Zjg4YTEwZDItZjQ1NS00Mzc5LWJlNzgtYmVlNTdhZjAxZGY2NjM4Nzg3OTE2NDEwNDUxNDMz" data-config-modal-style="side"></div>
+    <script async src="https://cdn.snipcart.com/themes/v3.6.1/default/snipcart.js"></script>
+</body>
+</html>
