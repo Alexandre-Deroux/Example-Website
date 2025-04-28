@@ -30,7 +30,7 @@ function closeLightbox() {
 var map = L.map('map').setView([45.7554819, 4.8262748], 15);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 L.marker([45.7554819, 4.8262748]).addTo(map)
-    .bindPopup("<b>BUND24</b><br>24, quai Tilsitt<br>69002 Lyon")
+    .bindPopup("<b>Example website</b><br>Parvis Notre-Dame - Place Jean-Paul II<br>75004 Paris")
     .openPopup();
 document.querySelector("form").addEventListener("submit", function(event) {
     event.preventDefault();

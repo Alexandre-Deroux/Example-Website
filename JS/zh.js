@@ -3,12 +3,12 @@ document.addEventListener("DOMContentLoaded", function() {
     const isMobile = window.matchMedia("(max-width: 768px)").matches;
     const options = isMobile ? [
         { value: "zh.html", label: "🇨🇳" },
-        { value: "fr.html", label: "🇫🇷" },
-        { value: "en.html", label: "🇬🇧" }
+        { value: "en.html", label: "🇬🇧" },
+        { value: "fr.html", label: "🇫🇷" }
     ] : [
         { value: "zh.html", label: "中文" },
+        { value: "en.html", label: "English" },
         { value: "fr.html", label: "Français" },
-        { value: "en.html", label: "English" }
     ];
     options.forEach(opt => {
         let option = document.createElement("option");
@@ -30,7 +30,7 @@ function closeLightbox() {
 var map = L.map('map').setView([45.7554819, 4.8262748], 15);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 L.marker([45.7554819, 4.8262748]).addTo(map)
-    .bindPopup("<b>BUND24</b><br>24, quai Tilsitt<br>69002 Lyon")
+    .bindPopup("<b>Example website</b><br>Parvis Notre-Dame - Place Jean-Paul II<br>75004 Paris")
     .openPopup();
 document.querySelector("form").addEventListener("submit", function(event) {
     event.preventDefault();

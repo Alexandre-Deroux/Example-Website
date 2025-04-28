@@ -1,71 +1,71 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BUND24</title>
-    <link rel="icon" type="image/jpg" href="Images/Logo de BUND24.jpg">
-    <link rel="preload" href="Images/Logo de BUND24.jpg" as="image">
-    <link rel="preload" href="Images/Photo de Vase (1).jpg" as="image">
-    <link rel="preload" href="Images/Photo de Vase (2).jpg" as="image">
-    <link rel="preload" href="Images/Photo de Vase (3).jpg" as="image">
-    <link rel="preload" href="Images/Photo de Vase (4).jpg" as="image">
-    <link rel="preload" href="Images/Photo de Vase (5).jpg" as="image">
-    <link rel="preload" href="Images/Photo de Vase (6).jpg" as="image">
+    <title>Example website</title>
+    <link rel="icon" type="image/jpg" href="Images/Example Website Logo.jpg">
+    <link rel="preload" href="Images/Example Website Logo.jpg" as="image">
+    <link rel="preload" href="Images/Vase Photo (1).jpg" as="image">
+    <link rel="preload" href="Images/Vase Photo (2).jpg" as="image">
+    <link rel="preload" href="Images/Vase Photo (3).jpg" as="image">
+    <link rel="preload" href="Images/Vase Photo (4).jpg" as="image">
+    <link rel="preload" href="Images/Vase Photo (5).jpg" as="image">
+    <link rel="preload" href="Images/Vase Photo (6).jpg" as="image">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
     <link rel="stylesheet" href="CSS/main.css">
 </head>
 <body>
     <header>
         <div class="logo-container">
-            <img src="Images/Logo de BUND24.jpg" alt="Logo de BUND24" class="logo">
+            <img src="Images/Example Website Logo.jpg" alt="Example Website Logo" class="logo">
             <span class="company-name">BUND24</span>
         </div>
         <nav>
-            <a href="#art-gallery">Galerie d'Art</a>
-            <a href="products-fr.html" target="_blank">Produits</a>
-            <a href="#press">Presse et Contact</a>
+            <a href="#art-gallery">Art Gallery</a>
+            <a href="products-en.html" target="_blank">Products</a>
+            <a href="#press">Press and Contact</a>
         </nav>
         <select class="language-selector" id="language-selector"></select>
     </header>
     <section id="about">
-        <h2>À propos de BUND24</h2>
+        <h2>About Example website</h2>
         <div class="description">
             <p>
-                Je suis <strong>Fang</strong>, auto-entrepreneuse spécialisée dans <strong>l'exposition et la vente de vases et d'objets d'art d'inspiration chinoise</strong>.
-                Passionnée par l'art et la culture asiatique, je sélectionne avec soin des <strong>pièces uniques en porcelaine, céramique et jade</strong>, alliant <strong>raffinement, tradition et élégance</strong>.
-                À travers mon activité, je souhaite partager <strong>la beauté et l'histoire</strong> de ces objets d'exception, qu'ils soient destinés à enrichir une collection, à sublimer un intérieur ou à offrir un cadeau raffiné.
-                <strong>Contactez-moi</strong> pour en savoir plus sur ma collection ou organiser une visite.
-                Je serai ravie de vous accompagner dans votre recherche et de vous faire découvrir mon univers artistique.
+                I am <strong>Fang</strong>, a self-employed entrepreneur specialising in <strong>the exhibition and sale of vases and art objects inspired by Chinese culture</strong>.  
+                Passionate about Asian art and culture, I carefully select <strong>unique pieces in porcelain, ceramics, and jade</strong>, combining <strong>refinement, tradition, and elegance</strong>.  
+                Through my work, I aim to share <strong>the beauty and history</strong> of these exceptional objects, whether they are intended to enrich a collection, enhance an interior, or serve as an elegant gift.
+                <strong>Contact me</strong> to learn more about my collection or to arrange a visit.  
+                I would be delighted to assist you in your search and introduce you to my artistic world.
             </p>
         </div>
     </section>
     <section id="art-gallery">
-        <h2>Galerie d'Art</h2>
+        <h2>Art gallery</h2>
         <div class="gallery">
-            <div class="gallery-item" onclick="openLightbox('Images/Photo de Vase (1).jpg')">
-                <img src="Images/Photo de Vase (1).jpg" alt="Photo de Vase (1)">
-                <p><strong>Vase cloisonné bleu</strong> : Orné de fleurs de prunier, un symbole d'élégance et de renouveau dans l'art chinois.</p>
+            <div class="gallery-item" onclick="openLightbox('Images/Vase Photo (1).jpg')">
+                <img src="Images/Vase Photo (1).jpg" alt="Vase Photo (1)">
+                <p><strong>Blue cloisonné vase</strong>: Adorned with plum blossoms, a symbol of elegance and renewal in Chinese art.</p>
             </div>
-            <div class="gallery-item" onclick="openLightbox('Images/Photo de Vase (2).jpg')">
-                <img src="Images/Photo de Vase (2).jpg" alt="Photo de Vase (2)">
-                <p><strong>Vase en porcelaine émaillée</strong> : Décoré de pivoines et d'un oiseau, représentant prospérité et beauté.</p>
+            <div class="gallery-item" onclick="openLightbox('Images/Vase Photo (2).jpg')">
+                <img src="Images/Vase Photo (2).jpg" alt="Vase Photo (2)">
+                <p><strong>Enamelled porcelain vase</strong>: Decorated with peonies and a bird, representing prosperity and beauty.</p>
             </div>
-            <div class="gallery-item" onclick="openLightbox('Images/Photo de Vase (3).jpg')">
-                <img src="Images/Photo de Vase (3).jpg" alt="Photo de Vase (3)">
-                <p><strong>Vase noir minimaliste</strong> : Design épuré avec une plume dorée gravée, alliant modernité et raffinement.</p>
+            <div class="gallery-item" onclick="openLightbox('Images/Vase Photo (3).jpg')">
+                <img src="Images/Vase Photo (3).jpg" alt="Vase Photo (3)">
+                <p><strong>Minimalist black vase</strong>: Sleek design with an engraved golden feather, combining modernity and refinement.</p>
             </div>
-            <div class="gallery-item" onclick="openLightbox('Images/Photo de Vase (4).jpg')">
-                <img src="Images/Photo de Vase (4).jpg" alt="Photo de Vase (4)">
-                <p><strong>Vases en porcelaine bleue et blanche</strong> : Inspirés de la dynastie Ming, avec des paysages traditionnels chinois.</p>
+            <div class="gallery-item" onclick="openLightbox('Images/Vase Photo (4).jpg')">
+                <img src="Images/Vase Photo (4).jpg" alt="Vase Photo (4)">
+                <p><strong>Blue and white porcelain vases</strong>: Inspired by the Ming dynasty, featuring traditional Chinese landscapes.</p>
             </div>
-            <div class="gallery-item" onclick="openLightbox('Images/Photo de Vase (5).jpg')">
-                <img src="Images/Photo de Vase (5).jpg" alt="Photo de Vase (5)">
-                <p><strong>Vase en porcelaine bleue et blanche</strong> : Motifs traditionnels avec des poissons, symboles de prospérité et d'abondance en Chine.</p>
+            <div class="gallery-item" onclick="openLightbox('Images/Vase Photo (5).jpg')">
+                <img src="Images/Vase Photo (5).jpg" alt="Vase Photo (5)">
+                <p><strong>Blue and white porcelain vase</strong>: Traditional motifs with fish, symbols of prosperity and abundance in China.</p>
             </div>
-            <div class="gallery-item" onclick="openLightbox('Images/Photo de Vase (6).jpg')">
-                <img src="Images/Photo de Vase (6).jpg" alt="Photo de Vase (6)">
-                <p><strong>Vase en émail vert céladon</strong> : Décoré de motifs floraux raffinés, inspirés des porcelaines impériales de la dynastie Qing.</p>
+            <div class="gallery-item" onclick="openLightbox('Images/Vase Photo (6).jpg')">
+                <img src="Images/Vase Photo (6).jpg" alt="Vase Photo (6)">
+                <p><strong>Celadon green enamel vase</strong>: Decorated with refined floral patterns, inspired by imperial Qing dynasty porcelains.</p>
             </div>
         </div>
     </section>
@@ -74,43 +74,43 @@
         <img id="lightbox-img" src="" alt="Image Agrandie">
     </div>
     <section id="press">
-        <h2>Presse</h2>
+        <h2>Press</h2>
         <div class="description">
             <p>
-                Je suis <strong>Fang</strong>, auto-entrepreneuse spécialisée dans <strong>l'exposition et la vente de vases et d'objets d'art d'inspiration chinoise</strong>.
-                Passionnée par l'art et la culture asiatique, je sélectionne avec soin des <strong>pièces uniques en porcelaine, céramique et jade</strong>, alliant <strong>raffinement, tradition et élégance</strong>.
-                À travers mon activité, je souhaite partager <strong>la beauté et l'histoire</strong> de ces objets d'exception, qu'ils soient destinés à enrichir une collection, à sublimer un intérieur ou à offrir un cadeau raffiné.
-                <strong>Contactez-moi</strong> pour en savoir plus sur ma collection ou organiser une visite.
-                Je serai ravie de vous accompagner dans votre recherche et de vous faire découvrir mon univers artistique.
+                I am <strong>Fang</strong>, a self-employed entrepreneur specialising in <strong>the exhibition and sale of vases and art objects inspired by Chinese culture</strong>.  
+                Passionate about Asian art and culture, I carefully select <strong>unique pieces in porcelain, ceramics, and jade</strong>, combining <strong>refinement, tradition, and elegance</strong>.  
+                Through my work, I aim to share <strong>the beauty and history</strong> of these exceptional objects, whether they are intended to enrich a collection, enhance an interior, or serve as an elegant gift.
+                <strong>Contact me</strong> to learn more about my collection or to arrange a visit.  
+                I would be delighted to assist you in your search and introduce you to my artistic world.
             </p>
         </div>
     </section>
     <section id="contact">
-        <h2>Contactez-moi</h2>
+        <h2>Contact me</h2>
         <form action="https://formspree.io/f/manqazzq" method="POST">
-            <input type="text" name="Nom" placeholder="Votre nom" required>
-            <input type="email" name="E-mail" placeholder="Votre e-mail" required>
-            <textarea name="Message" rows="4" placeholder="Votre message" required></textarea>
-            <button type="submit">Envoyer</button>
+            <input type="text" name="Nom" placeholder="Your name" required>
+            <input type="email" name="E-mail" placeholder="Your e-mail" required>
+            <textarea name="Message" rows="4" placeholder="Your message" required></textarea>
+            <button type="submit">Send</button>
         </form>
     </section>
     <footer>
-        <p><strong>BUND24</strong> - SIREN (SIRET) : 123 456 789</p>
-        <p>Création : 3 février 2025</p>
-        <p>Dirigeant : <a href="https://www.linkedin.com/in/fang-d-anterroches-8770ab59" target="_blank">Fang d'Anterroches</a></p>
-        <p>Forme juridique : Auto-entreprise</p>
-        <p>Adresse : 24, quai Tilsitt - 69002 Lyon, France</p>
+        <p><strong>Example website</strong> - SIREN (SIRET) : 123 456 789</p>
+        <p>Creation: 16 February 2025</p>
+        <p>Manager: <a href="https://www.linkedin.com/in/alexandre-deroux" target="_blank">Alexandre Deroux</a></p>
+        <p>Legal form: Self-employed</p>
+        <p>Address: 24, quai Tilsitt - 69002 Lyon, France</p>
         <div class="map-container">
             <div id="map"></div>
         </div>
         <div class="footer-social">
-            <a href="https://www.instagram.com/bund24_fr" target="_blank">
-                <img src="Images/Logo d'Instagram.jpg" alt="Logo d'Instagram">
+            <a href="https://www.instagram.com/alexandre_deroux" target="_blank">
+                <img src="Images/Instagram Logo.jpg" alt="Instagram Logo">
             </a>
         </div>
-        <p>©&nbsp;2025 par <a href="https://www.linkedin.com/in/alexandre-deroux" target="_blank">Alexandre Deroux</a>. Tous droits réservés.</p>
+        <p>©&nbsp;2025 by <a href="https://www.linkedin.com/in/alexandre-deroux" target="_blank">Alexandre Deroux</a>. All rights reserved.</p>
     </footer>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script src="JS/fr.js"></script>
+    <script src="JS/en.js"></script>
 </body>
 </html>
