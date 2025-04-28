@@ -27,9 +27,9 @@ function openLightbox(imageSrc) {
 function closeLightbox() {
     document.getElementById('lightbox').style.display = 'none';
 }
-var map = L.map('map').setView([45.7554819, 4.8262748], 15);
+var map = L.map('map').setView([48.8533592, 2.3488693], 15);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
-L.marker([45.7554819, 4.8262748]).addTo(map)
+L.marker([48.8533592, 2.3488693]).addTo(map)
     .bindPopup("<b>Exemple site Internet</b><br>Parvis Notre-Dame - Place Jean-Paul II<br>75004 Paris")
     .openPopup();
 document.querySelector("form").addEventListener("submit", function(event) {
