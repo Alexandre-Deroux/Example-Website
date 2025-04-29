@@ -21,23 +21,23 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 function openLightbox(imageSrc) {
-    document.getElementById('lightbox-img').src = imageSrc;
-    document.getElementById('lightbox').style.display = 'flex';
+    document.getElementById("lightbox-img").src = imageSrc;
+    document.getElementById("lightbox").style.display = "flex";
 }
 function closeLightbox() {
-    document.getElementById('lightbox').style.display = 'none';
+    document.getElementById("lightbox").style.display = "none";
 }
-var map = L.map('map').setView([48.8533592, 2.3488693], 15);
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+var map = L.map("map").setView([48.8533592, 2.3488693], 15);
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(map);
 L.marker([48.8533592, 2.3488693]).addTo(map)
-    .bindPopup("<b>Exemple site Internet</b><br>Parvis Notre-Dame - Place Jean-Paul II<br>75004 Paris")
+    .bindPopup("<b>Exemple</b><br>Parvis Notre-Dame - Place Jean-Paul II<br>75004 Paris")
     .openPopup();
 document.querySelector("form").addEventListener("submit", function(event) {
     event.preventDefault();
     fetch(this.action, {
         method: this.method,
         body: new FormData(this),
-        headers: { 'Accept': 'application/json' }
+        headers: { "Accept": "application/json" }
     }).then(response => {
         if (response.ok) {
             alert("✅\nMerci de votre message !\nNous vous contacterons bientôt.");
