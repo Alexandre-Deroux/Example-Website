@@ -293,10 +293,10 @@ footer a:hover {
     h1, h2 {
         font-size: 1.3rem;
     }
-    .description {
+    .description-press {
         padding: 25px;
     }
-    .description p {
+    .description-press p {
         font-size: 1.0rem;
         line-height: 1.8;
     }
